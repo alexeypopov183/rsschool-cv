@@ -44,7 +44,11 @@ function order(words){
 ## Education
 * Baikal State University
     + Management 5 course
-
+***
+## Languages
+* Russian
+* Ukraine
+* English A1 (A2 in progress)
 
 
 
