@@ -16,6 +16,36 @@ I`m 23 years old. Interest in the field of IT arose during school years, but did
 * Figma, PS
 * Vim, VS Code
 ***
+## Code examples:
+* 6 kyu kata. Your order, please. 
+*Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.*
+### First solution:
+```
+ function order(words){
+    let result = words.match(/[0-9]/g);
+    let arr = words.split(' ');
+    if(words === null || words === '') {
+      return '';
+    }
+    let newArr = result.reduce((acc, item, i) => {
+      acc[item] = arr[i]
+      return acc
+    }, {})
+    return Object.values(newArr).join(' ')
+  }
+```
+### After refactor
+```
+function order(words){
+ return words.split(' ').sort((a, b) => a.match(/\d/) - b.match(/\d/)).join(' ')
+}
+```
+***
+## Education
+* Baikal State University
+    + Management 5 course
+
+
 
 
 
