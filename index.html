@@ -1,53 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-  <title>Welcome cv</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <h1>Hello friend<br> my name Alexey</h1>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Welcome cv</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-title">
+          <div class="text-top">
+            <div>
+              <span>hello <span class="text-top__friend">Friend</span> </span>
+              <br />
+              <span>nice to see you</span>
+            </div>
+          </div>
+          <div class="text-bottom">
+            <div>I'm Alexey</div>
+          </div>
+        </div>
+      </div>
+    </header>
     <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-list__item"><a href="#summary" class="nav-list__link">Summary</a></li>
-        <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Contacts</a></li>
-        <li class="nav-list__item"><a href="#skills" class="nav-list__link">Skills</a></li>
-        <li class="nav-list__item"><a href="#code" class="nav-list__link">Code</a></li>
-        <li class="nav-list__item"><a href="#education" class="nav-list__link">Education</a></li>
-        <li class="nav-list__item"><a href="#english" class="nav-list__link">English</a></li>
-      </ul>
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#summary" class="nav-list__link">Summary</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#skills" class="nav-list__link">Skills</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#code" class="nav-list__link">Code</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#contacts" class="nav-list__link">Contacts</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#education" class="nav-list__link">Education</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#english" class="nav-list__link">English</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-  </header>
-  <main class="main">
-    <div class="container main-container">
-      <section class="section main-summary" id="summary">
-        <h2 class="section-title">Alexey</h2>
-      </section>
-      <section class="section main-contacts" id="contacts">
-        <h2 class="section-title">Contacts</h2>
-      </section>
-      <section class="section main-skills" id="skills">
-        <h2 class="section-title">Skills</h2>
-      </section>
-      <section class="section main-code" id="code">
-        <h2 class="section-title">Code</h2>
-      </section>
-      <section class="section main-education" id="education">
-        <h2 class="section-title">Education</h2>
-      </section>
-      <section class="section main-english" id="english">
-        <h2 class="section-title">English</h2>
-      </section>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container"></div>
-  </footer>
-</body>
+    <main class="main">
+      <div class="container main-container">
+        <section class="section main-summary" id="summary">
+          <div class="main-summary__title">
+            <img class="logo" src="./assets/img/mylogo.jpg" alt="photo" />
+            <h2 class="section-title">Alexey Popov <br />Frontend developer</h2>
+          </div>
+          <p>
+            I am 23 years old, I live in the city of Rostov-on-Don. Back in
+            school, I was fascinated by the IT sphere, and I knew that this was
+            what I needed. Now my main hobby is studying. The acquisition of new
+            knowledge in this area fascinated me so much that I try to learn new
+            things in my free time. I try to combine learning the frontend with
+            learning English. I know that I am on the right track and I am not
+            going to turn back.
+          </p>
+        </section>
+        <section class="section main-skills" id="skills">
+          <h2 class="section-title">My Skills</h2>
+          <div class="main-skills__skills">
+          <div class="main-skills__hard-skills">
+            <h3>Hard Skills</h3>
+            <ul>
+              <li class="html">HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>Figma, PS</li>
+            </ul>
+          </div>
+          <div class="main-skills__soft-skills">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Communication</li>
+              <li>Stress management</li>
+              <li>Decision-making</li>
+              <li>Teamwork</li>
+              <li>Critical thinking</li>
+            </ul>
+          </div>
+        </div>
+        </section>
+        <section class="section main-code" id="code">
+          <h2 class="section-title">Code</h2>
+        </section>
+        <section class="section main-education" id="education">
+          <h2 class="section-title">Education</h2>
+        </section>
+        <section class="section main-english" id="english">
+          <h2 class="section-title">English</h2>
+        </section>
+        <section class="section main-contacts" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+  </body>
 </html>
