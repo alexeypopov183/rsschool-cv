@@ -1,0 +1,80 @@
+@import url(./normalize.css);
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list__link {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 15px 15px;
+}
+
+.nav-list__link:hover {
+  color: black;
+  background: blue;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
