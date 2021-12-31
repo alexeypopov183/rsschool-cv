@@ -33,22 +33,22 @@
       <div class="container">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a href="#summary" class="nav-list__link">Summary</a>
+            <a href="#summary" class="nav-list__link summary">Summary</a>
           </li>
           <li class="nav-list__item">
-            <a href="#skills" class="nav-list__link">Skills</a>
+            <a href="#skills" class="nav-list__link skills">Skills</a>
           </li>
           <li class="nav-list__item">
-            <a href="#code" class="nav-list__link">Code</a>
+            <a href="#code" class="nav-list__link code">Code</a>
           </li>
           <li class="nav-list__item">
-            <a href="#contacts" class="nav-list__link">Contacts</a>
+            <a href="#contacts" class="nav-list__link contacts">Contacts</a>
           </li>
           <li class="nav-list__item">
-            <a href="#education" class="nav-list__link">Education</a>
+            <a href="#education" class="nav-list__link education">Education</a>
           </li>
           <li class="nav-list__item">
-            <a href="#english" class="nav-list__link">English</a>
+            <a href="#english" class="nav-list__link english">English</a>
           </li>
         </ul>
       </div>
@@ -76,27 +76,44 @@
           <div class="main-skills__hard-skills">
             <h3>Hard Skills</h3>
             <ul>
-              <li class="html">HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Git</li>
-              <li>Figma, PS</li>
+              <li class="main-skills__item html">HTML</li>
+              <li class="main-skills__item css">CSS</li>
+              <li class="main-skills__item js">JavaScript</li>
+              <li class="main-skills__item git">Git</li>
+              <li class="main-skills__item figma">Figma</li>
             </ul>
           </div>
           <div class="main-skills__soft-skills">
             <h3>Soft Skills</h3>
             <ul>
-              <li>Communication</li>
-              <li>Stress management</li>
-              <li>Decision-making</li>
-              <li>Teamwork</li>
-              <li>Critical thinking</li>
+              <li class="main-skills__item communication">Communication</li>
+              <li class="main-skills__item stress-mang">Stress management</li>
+              <li class="main-skills__item decision-mk">Decision-making</li>
+              <li class="main-skills__item teamwork">Teamwork</li>
+              <li class="main-skills__item critical-thk">Critical thinking</li>
             </ul>
           </div>
         </div>
         </section>
         <section class="section main-code" id="code">
-          <h2 class="section-title">Code</h2>
+          <div class="main-code__title">
+            <h2 class="section-title">Code example</h2>
+            <p>Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.</p>
+            <p>If a value is present in b, all of its occurrences must be removed from the other.</p>
+          </div>
+          <div class="main-code__code-container">
+            <pre>
+              <code class="main-code__code">
+  function arrayDiff(a, b) {
+  let compareObj = b.reduce((acc, item) => {
+    acc[item] = 0 
+    return acc                         
+  }, {})
+  return a.filter(item => compareObj[item] != 0)
+  }
+              </code>
+            </pre>
+          </div>
         </section>
         <section class="section main-education" id="education">
           <h2 class="section-title">Education</h2>
