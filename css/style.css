@@ -164,6 +164,7 @@ body {
 
 .section-title {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .nav {
@@ -226,9 +227,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -238,7 +239,7 @@ body {
 .section {
   color: white;
   border-radius: 30px;
-  width: 48%;
+  width: 49%;
   margin: 10px 0;
 }
 
@@ -250,7 +251,7 @@ body {
 
 .main-summary {
   background: #2e6ec7;
-  text-align: center;
+  text-align: justify;
   line-height: 2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -317,15 +318,23 @@ body {
 }
 
 .main-skills__hard-skills li {
-  padding: 15px 0;
+  padding: 5px 0;
+}
+
+.main-skills__hard-skills ul {
+  padding: 0;
 }
 
 .main-skills__soft-skills {
   width: 50%;
 }
 
+.main-skills__soft-skills ul {
+  padding: 0;
+}
+
 .main-skills__soft-skills li {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .main-skills__item::before {
@@ -483,19 +492,19 @@ body {
 }
 
 .main-code {
-  background: #4a4abd;
+  background: #894abd;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .main-code:hover {
-  background: #5555d8;
+  background: #8755d8;
   -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-code__title {
-  padding: 20px;
+  padding: 0 30px;
   text-align: justify;
 }
 
@@ -512,5 +521,43 @@ body {
 
 .main-code pre {
   margin: 0;
+}
+
+.main-education {
+  background: #ffb30e;
+}
+
+.main-education__list {
+  font-size: 24px;
+}
+
+.main-education__item {
+  padding: 20px 0;
+}
+
+.main-education__item::before {
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.university::before {
+  background-image: url(../assets/svg/university-solid.svg);
+}
+
+.course-html::before {
+  background-image: url(../assets/svg/list-alt-solid.svg);
+}
+
+.course-rs::before {
+  background-image: url(../assets/svg/list-alt-regular.svg);
 }
 /*# sourceMappingURL=style.css.map */
