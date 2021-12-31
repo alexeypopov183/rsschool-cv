@@ -221,6 +221,42 @@ body {
   border: 2px solid #ff2b2b;
 }
 
+.code:hover {
+  color: #894abd;
+  background: #ececec;
+}
+
+.code:active {
+  border: 2px solid #894abd;
+}
+
+.education:hover {
+  color: #ffb30e;
+  background: #ececec;
+}
+
+.education:active {
+  border: 2px solid #ffb30e;
+}
+
+.english:hover {
+  color: #1bdf1b;
+  background: #ececec;
+}
+
+.english:active {
+  border: 2px solid #1bdf1b;
+}
+
+.contacts:hover {
+  color: #0ea8c4;
+  background: #ececec;
+}
+
+.contacts:active {
+  border: 2px solid #0ea8c4;
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,5 +595,66 @@ body {
 
 .course-rs::before {
   background-image: url(../assets/svg/list-alt-regular.svg);
+}
+
+.main-english {
+  background: #1bdf1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main-english__logo {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.main-contacts {
+  background: #0ea8c4;
+}
+
+.main-contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fa {
+  margin: 0 10px;
+  padding: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-envelope {
+  background: #3B5998;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
