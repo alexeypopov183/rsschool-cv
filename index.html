@@ -1,13 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Welcome cv</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-title">
+          <div class="text-top">
+            <div>
+              <span>hello <span class="text-top__friend">Friend</span> </span>
+              <br />
+              <span>nice to see you</span>
+            </div>
+          </div>
+          <div class="text-bottom">
+            <div>I'm Alexey</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#summary" class="nav-list__link summary">Summary</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#skills" class="nav-list__link skills">Skills</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#code" class="nav-list__link code">Code</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#education" class="nav-list__link education">Education</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#english" class="nav-list__link english">English</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#contacts" class="nav-list__link contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="container main-container">
+        <section class="section main-summary" id="summary">
+          <div class="main-summary__title">
+            <img class="logo" src="./assets/img/mylogo.jpg" alt="photo" />
+            <h1 class="section-title">Alexey Popov <br />Frontend developer</h1>
+          </div>
+          <p>
+            I am 23 years old, I live in the city of Rostov-on-Don. Back in
+            school, I was fascinated by the IT sphere, and I knew that this was
+            what I needed. Now my main hobby is studying. The acquisition of new
+            knowledge in this area fascinated me so much that I try to learn new
+            things in my free time. I try to combine learning the frontend with
+            learning English. I know that I am on the right track and I am not
+            going to turn back.
+          </p>
+        </section>
+        <section class="section main-skills" id="skills">
+          <h2 class="section-title">My Skills</h2>
+          <div class="main-skills__skills">
+          <div class="main-skills__hard-skills">
+            <h3>Hard Skills</h3>
+            <ul>
+              <li class="main-skills__item html">HTML</li>
+              <li class="main-skills__item css">CSS</li>
+              <li class="main-skills__item js">JavaScript</li>
+              <li class="main-skills__item git">Git</li>
+              <li class="main-skills__item figma">Figma</li>
+            </ul>
+          </div>
+          <div class="main-skills__soft-skills">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li class="main-skills__item communication">Communication</li>
+              <li class="main-skills__item stress-mang">Stress management</li>
+              <li class="main-skills__item decision-mk">Decision-making</li>
+              <li class="main-skills__item teamwork">Teamwork</li>
+              <li class="main-skills__item critical-thk">Critical thinking</li>
+            </ul>
+          </div>
+        </div>
+        </section>
+        <section class="section main-code" id="code">
+          <div class="main-code__title">
+            <h2 class="section-title">Code example</h2>
+            <p>Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.</p>
+            <p>If a value is present in b, all of its occurrences must be removed from the other.</p>
+          </div>
+          <div class="main-code__code-container">
+            <pre>
+              <code class="main-code__code">
+  function arrayDiff(a, b) {
+  let compareObj = b.reduce((acc, item) => {
+    acc[item] = 0 
+    return acc                         
+  }, {})
+  return a.filter(item => compareObj[item] != 0)
+  }
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="section main-education" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="main-education__list">
+            <li class="main-education__item university">Baikal State University - Faculty of Management</li>
+            <li class="main-education__item course-html">Course HTML Academy</li>
+            <li class="main-education__item course-rs">Course RS school </li>
+          </ul>
+          <div class="project">
+          <h2 class="section-title">Click to Project</h2>
+          <a href="https://alexeypopov183.github.io/momentum/" class="fa fa-folder-open fa-2x" target="_blank"></a> 
+        </div>
+        </section>
+        <section class="section main-english" id="english">
+          <h2 class="section-title">English</h2>
+          <span class="main-english__logo">A1+</span>
+        </section>
+        <section class="section main-contacts" id="contacts">
+        <div class="main-contacts__container">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="main-contacts__list">
+            <li><a href="https://t.me/alexey_loo" class="fa fa-telegram fa-2x" target="_blank"></a></li>
+            <li><a href="https://github.com/alexeypopov183" class="fa fa-github fa-2x" target="_blank"></a></li>
+            <li><a href="mailto:mail@alexeypopov183@gmail.com" class="fa fa-envelope fa-2x" target="_blank"></a></li>
+          </ul>
+        </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-menu">
+          <a href="https://github.com/alexeypopov183">Github</a>
+        <h3>2022</h3>
+        <a href="https://rs.school/">
+          <img src="./assets/img/rs.png" class="footer-menu__rs-link" alt="logo-rs" >
+        </a>
+      </div>
+      </div>
+    </footer>
+  </body>
 </html>
