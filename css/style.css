@@ -172,7 +172,7 @@ body {
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.7);
-  padding: 1.5vh 0;
+  padding: 15px 0;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -199,7 +199,7 @@ body {
   border-radius: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 3vh 3vw;
+  padding: 20px 20px;
   border: 2px solid transparent;
 }
 
@@ -277,6 +277,13 @@ body {
   border-radius: 30px;
   width: 49%;
   margin: 10px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section:hover {
+  -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -315,8 +322,6 @@ body {
 
 .main-summary:hover {
   background: #3b84f3;
-  -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -345,8 +350,6 @@ body {
 
 .main-skills:hover {
   background: #fd4949;
-  -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-skills__hard-skills {
@@ -535,8 +538,6 @@ body {
 
 .main-code:hover {
   background: #8755d8;
-  -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-code__title {

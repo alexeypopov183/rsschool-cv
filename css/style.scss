@@ -97,7 +97,7 @@ body {
   position: sticky;
   top: 0;
   background: rgba($color: #ffffff, $alpha: 0.7);
-  padding: 1.5vh 0;
+  padding: 15px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   &-list {
     padding: 0;
@@ -112,7 +112,7 @@ body {
       background: #e0e0e0;
       border-radius: 40px;
       transition: 0.3s;
-      padding: 3vh 3vw;
+      padding: 20px 20px;
       border: 2px solid transparent;
     }
   }
@@ -183,6 +183,10 @@ body {
   border-radius: 30px;
   width: 49%;
   margin: 10px 0;
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
 }
 @media (max-width: 768px) {
   .section {
@@ -211,7 +215,6 @@ body {
   }
   &:hover {
     background: #3b84f3;
-    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
   }
 }
 .logo {
@@ -246,7 +249,6 @@ body {
   }
   &:hover {
     background: rgb(253, 73, 73);
-    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
   }
 }
 .main-skills__hard-skills {
@@ -353,7 +355,6 @@ body {
   transition: 0.3s;
   &:hover {
     background: rgb(135, 85, 216);
-    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
   }
   &__title {
     padding: 0 30px;
@@ -437,9 +438,6 @@ body {
 }
 .fa-folder-open {
   color: white;
-  &:hover {
-    
-  }
 }
 .fa-telegram {
   background: #3B5998;
