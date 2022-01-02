@@ -400,6 +400,10 @@ body {
 .course-rs::before {
   background-image: url(../assets/svg/list-alt-regular.svg);
 }
+.project {
+  display: flex;
+  justify-content: center;
+}
 .main-english {
   background: rgb(27, 223, 27);
   display: flex;
@@ -412,6 +416,10 @@ body {
 }
 .main-contacts {
   background: rgb(14, 168, 196);
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
   &__list {
     display: flex;
     flex-direction: row;
@@ -419,8 +427,7 @@ body {
 }
 .fa {
   margin: 0 10px;
-  padding: 20px;
-  width: 20px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -428,7 +435,13 @@ body {
 .fa:hover {
   opacity: 0.7;
 }
-.fa-facebook {
+.fa-folder-open {
+  color: white;
+  &:hover {
+    
+  }
+}
+.fa-telegram {
   background: #3B5998;
   color: white;
 }
@@ -439,4 +452,18 @@ body {
 .fa-envelope {
   background: #3B5998;
   color: white;
+}
+.footer-menu {
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0px -12px 24px 1px rgba(0,0,0,0.5);
+  &__rs-link {
+    display: block;
+    height: 80px;
+    width: 150px;
+  }
 }
